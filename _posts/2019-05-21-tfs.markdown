@@ -1,0 +1,15 @@
+---
+layout:     post
+title:      "TFS 部署"
+subtitle:   "ES5, ES6, ES2016, ES.Next: What's going on with JavaScript versioning?"
+date:       2015-09-22
+author:     "我"
+header-img: "img/post-bg-js-version.jpg"
+tags:
+    - 前端开发
+    - JavaScript
+    - 翻译
+---
+
+
+TFS 有着很奇怪的命名史。
