@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "【教程】 VSTFS 部署java项目"
+title:      "【教程】TFS部署java项目"
 subtitle:   "那些在VSTFS中部署java项目所遇到的坑。"
 date:       2019-05-20
 author:     "wangnem"
