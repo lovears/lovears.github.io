@@ -1,0 +1,260 @@
+---
+layout: post
+title: 【工具类】 二维码的生成识别
+date: 2019-05-23
+author: "wangnem"
+header-img: 
+tags:
+  - 工具
+  - 二维码
+  - zxing
+  - qrcode
+---
+使用zxing生成二维码：
+### 引入zxing
+```xml
+ <dependency>
+    <groupId>com.google.zxing</groupId>
+    <artifactId>core</artifactId>
+</dependency>
+<dependency>
+    <groupId>com.google.zxing</groupId>
+    <artifactId>javase</artifactId>
+</dependency>
+```
+### 使用zxing生成二维码
+```java
+
+public class QrCodeView {
+
+    private static final Logger logger = LoggerFactory.getLogger(QrCodeView.class);
+
+    private static final String  CHARSET     = "utf-8";
+    private static final String  FORMAT_NAME = "JPG";
+    /**
+     * 二维码边长
+     */
+    private              Integer qrCodeSize;
+    /**
+     * 中央图标宽度.
+     */
+    private              Integer logoWidth;
+    /**
+     * 中央图标高度.
+     */
+    private              Integer logoHeight;
+    /**
+     * 二维码前景色.
+     */
+    private              Integer foregroundColor;
+    /**
+     * 二维码背景色.
+     */
+    private              Integer backgroundColor;
+    /**
+     * 是否压缩.
+     */
+    private              boolean needCompress;
+    /**
+     * 中心logopath.
+     */
+    private              String  logoPath;
+
+    private QrCodeView(Builder builder) {
+        this.qrCodeSize = builder.qrCodeSize;
+        this.logoWidth = builder.logoWidth;
+        this.logoHeight = builder.logoHeight;
+        this.backgroundColor = builder.backgroundColor;
+        this.foregroundColor = builder.foregroundColor;
+        this.needCompress = builder.needCompress;
+        this.logoPath = builder.logoPath;
+    }
+
+    public BufferedImage create(String content) {
+        BufferedImage image = null;
+        try {
+            image = this.createImage(content, this.logoPath, needCompress);
+        } catch (Exception e) {
+            logger.error("生成二维码异常", e);
+        }
+        return image;
+    }
+
+    public File createAndWriteToFile(String content, String destPath) {
+        BufferedImage image = this.create(content);
+        File file = null;
+        try {
+            file = new File(destPath);
+            ImageIO.write(image, FORMAT_NAME, file);
+        } catch (IOException e) {
+            logger.error("二维码生成异常", e);
+        }
+        return file;
+    }
+
+    private BufferedImage createImage(String content, String imgPath, boolean needCompress)
+            throws Exception {
+        Map<EncodeHintType, Object> hints = new ConcurrentHashMap<>(4);
+        hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.H);
+        hints.put(EncodeHintType.CHARACTER_SET, CHARSET);
+        hints.put(EncodeHintType.MARGIN, 1);
+        BitMatrix bitMatrix = new MultiFormatWriter()
+                .encode(content, BarcodeFormat.QR_CODE, qrCodeSize, qrCodeSize,
+                        hints);
+        int width = bitMatrix.getWidth();
+        int height = bitMatrix.getHeight();
+        BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+        for (int x = 0; x < width; x++) {
+            for (int y = 0; y < height; y++) {
+                image.setRGB(x, y, bitMatrix.get(x, y) ? foregroundColor : backgroundColor);
+            }
+        }
+        if (imgPath == null || "".equals(imgPath)) {
+            return image;
+        }
+        // 插入图片
+        this.insertImage(image, imgPath, needCompress);
+        return image;
+    }
+
+    private void insertImage(BufferedImage source, String imgPath, boolean needCompress) {
+        File file = new File(imgPath);
+        if (!file.exists()) {
+            logger.error("文件:{}不存在！", imgPath);
+            return;
+        }
+        Image src;
+        try {
+            src = ImageIO.read(new File(imgPath));
+        } catch (Exception e) {
+            logger.error("logo图片解析失败", e);
+            return;
+        }
+        if (src != null) {
+            int width = src.getWidth(null);
+            int height = src.getHeight(null);
+            // 压缩LOGO
+            if (needCompress) {
+                if (width > logoWidth) {
+                    width = logoWidth;
+                }
+                if (height > logoHeight) {
+                    height = logoHeight;
+                }
+                Image image = src.getScaledInstance(width, height, Image.SCALE_SMOOTH);
+                BufferedImage tag = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+                Graphics g = tag.getGraphics();
+                // 绘制缩小后的图
+                g.drawImage(image, 0, 0, null);
+                g.dispose();
+                src = image;
+            }
+            // 插入LOGO
+            Graphics2D graph = source.createGraphics();
+            int x = (qrCodeSize - width) / 2;
+            int y = (qrCodeSize - height) / 2;
+            graph.drawImage(src, x, y, width, height, null);
+            Shape shape = new RoundRectangle2D.Float(x, y, width, width, 6, 6);
+            graph.setStroke(new BasicStroke(3f));
+            graph.draw(shape);
+            graph.dispose();
+        }
+
+    }
+
+    /**
+    * 解析二维码
+    */
+    public String decode(File file) throws Exception {
+        BufferedImage image;
+        image = ImageIO.read(file);
+        if (image == null) {
+            return null;
+        }
+        BufferedImageLuminanceSource source = new BufferedImageLuminanceSource(image);
+        BinaryBitmap bitmap = new BinaryBitmap(new HybridBinarizer(source));
+        Result result;
+        Map<DecodeHintType, Object> hints = new ConcurrentHashMap<>(1);
+        hints.put(DecodeHintType.CHARACTER_SET, CHARSET);
+        result = new MultiFormatReader().decode(bitmap, hints);
+        String resultStr = result.getText();
+        return resultStr;
+    }
+
+    public String decode(String path) throws Exception {
+        return this.decode(new File(path));
+    }
+
+    public static class Builder {
+
+        /**
+         * 二维码边长
+         */
+        private Integer qrCodeSize      = 300;
+        /**
+         * 中央图标宽度
+         */
+        private Integer logoWidth       = 60;
+        /**
+         * 中央图标高度
+         */
+        private Integer logoHeight      = 60;
+        /**
+         * 二维码前景色
+         */
+        private Integer foregroundColor = 0XFF000000;
+        /**
+         * 二维码背景色
+         */
+        private Integer backgroundColor = 0XFFFFFFF;
+        /**
+         * 是否压缩logo
+         */
+        private boolean needCompress    = true;
+        /**
+         * logo 文件地址
+         */
+        private String  logoPath;
+
+        public Builder qrCodeSize(Integer qrCodeSize) {
+            this.qrCodeSize = qrCodeSize;
+            return this;
+        }
+
+        public Builder logoWidth(Integer logoWidth) {
+            this.logoWidth = logoWidth;
+            return this;
+        }
+
+        public Builder logoHeight(Integer logoHeight) {
+            this.logoHeight = logoHeight;
+            return this;
+        }
+
+        public Builder foregroundColor(Integer foregroundColor) {
+            this.foregroundColor = foregroundColor;
+            return this;
+        }
+
+        public Builder backgroundColor(Integer backgroundColor) {
+            this.backgroundColor = backgroundColor;
+            return this;
+        }
+
+        public Builder needCompress(boolean needCompress) {
+            this.needCompress = needCompress;
+            return this;
+        }
+
+        public Builder logoPath(String logoPath) {
+            this.logoPath = logoPath;
+            return this;
+        }
+
+        public QrCodeView build() {
+            return new QrCodeView(this);
+        }
+
+    }
+}
+```
