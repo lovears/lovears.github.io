@@ -6,6 +6,7 @@ date:       2019-05-20
 author:     "wangnem"
 header-img: "img/post-bg-js-version.jpg"
 tags:
+    - 教程
     - VSTFS
     - java部署
     - SpringBoot
