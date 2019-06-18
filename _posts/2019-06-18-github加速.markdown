@@ -1,0 +1,27 @@
+---
+layout:     post
+title:      "【教程】github提速"
+subtitle:   "配置hosts对访问github网站提速"
+date:       2019-06-18
+author:     "wangnem"
+header-img: "img/post-bg-js-version.jpg"
+tags:
+    - 教程
+    - github
+    - 加速
+    - hosts
+    - dns
+---
+#### 修改DNS
+因为国内对`github`的`dns`做了某些限制，可以直接修改DNS地址为 `8.8.8.8`, 但是这个时候访问国内网站可能会比较慢。
+
+#### 修改hosts
+[http://tool.chinaz.com/dns](http://tool.chinaz.com/dns)，在该网站可以直接查询指定域名的TTL，选用TTL最小的一个，然后将域名与ip绑定，写入到Hosts中。
+
+查阅后得知,影响`github`访问的主要域名是`github.global.ssl.fastly.net`和`github.com`;然后在[http://tool.chinaz.com/dns](http://tool.chinaz.com/dns)
+查找到最小TTL对应的ip，然后分别绑定到 `hosts`中
+
+最后刷新缓存
+```shell
+ipconfig /flushdns
+```
