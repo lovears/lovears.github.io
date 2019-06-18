@@ -4,7 +4,7 @@ title:      "【TODO】2019下半年TodoList"
 subtitle:   "希望不会只是计划"
 date:       2019-06-18
 author:     "wangnem"
-header-img: "img/post-bg-js-version.jpg"
+header-img: "img/bg-todo.png"
 tags:
     - TODO
     - 计划
