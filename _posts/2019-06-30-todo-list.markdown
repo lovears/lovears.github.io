@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "【TODO】2019下半年TodoList"
-subtitle:   "希望不会只是计划"
+title:      "【TODO】2019下半年"
+subtitle:   "2019下半年TODO,希望不会只是计划"
 date:       2019-06-18
 author:     "wangnem"
 header-img: "img/bg-todo.png"
