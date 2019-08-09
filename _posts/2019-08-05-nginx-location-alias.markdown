@@ -1,5 +1,5 @@
 ---
-layout:     post
+layout:     post 
 title:      "【Nginx】Nginx proxy_pass,root,alias"
 subtitle:   "nginx 代理的几种方式： alias,proxy_pass,root等"
 date:       2019-08-05
