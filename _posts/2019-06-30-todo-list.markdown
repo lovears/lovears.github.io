@@ -19,8 +19,4 @@ tags:
 ```
 {{ hello }}
 ```
-<pre>
-{{ hello }}
-</pre>
 
-{% hello %}
