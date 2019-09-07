@@ -1,10 +1,10 @@
 ---
 layout:     post 
-title:      "【Redis】Redis相关问题（一）
+title:      "【Redis】 Redis相关问题（一）"
 subtitle:   "Redis相关常见问题"
 date:       2019-09-07
 author:     "老回路"
-header-img: "img/home-bg-o.jpg"
+header-img: "img/home-bg.jpg"
 tags:
     - redis
     - 缓存
