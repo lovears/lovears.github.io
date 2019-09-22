@@ -1,5 +1,16 @@
 ---
+layout:     post 
+title:      "【线程池】java thread"
+subtitle:   "java中的线程和线程池"
+date:       2019-09-22
+author:     "老回路"
+header-img: "img/home-bg.png"
+tags:
+    - thread
+    - threadpool
+    - 线程池
 ---
+
 # Java中的线程和多线程
 
 ## 基本概念
