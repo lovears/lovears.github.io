@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>https://example.org/posts/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 12 Jun 2024 22:07:45 +0800</lastBuildDate>
+    <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Maven Starter</title>
+      <link>https://example.org/posts/java/maven/my-first-blog/</link>
+      <pubDate>Wed, 12 Jun 2024 22:07:45 +0800</pubDate>
+      <guid>https://example.org/posts/java/maven/my-first-blog/</guid>
+      <description>&lt;p&gt;博客，又称网络日志或部落格，是一种个人或组织在网络上发布文章、图片、视频等内容的网站或在线日记。博客通常以时间倒序排列，新发布的文章排在前面。博客可以是个人分享日常、记录生活、表达观点，也可以是机构发布新闻、分享知识、推广产品。&lt;/p&gt;&#xA;&lt;h2 id=&#34;博客的特点包括&#34;&gt;博客的特点包括：&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;个人化：:博客通常由个人管理，内容和风格都具有鲜明的个性。&lt;/li&gt;&#xA;&lt;li&gt;即时性：:博客可以随时发布新的内容，更新速度快。&lt;/li&gt;&#xA;&lt;li&gt;互动性：:读者可以在博客上留言评论，与博主进行交流互动。&lt;/li&gt;&#xA;&lt;li&gt;易于分享：:博客上的内容可以方便地分享到其他社交平台。&lt;/li&gt;&#xA;&lt;li&gt;多样化：:博客的内容可以涵盖各种主题，如生活、旅行、科技、文学等等。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;一些知名的博客平台包括&#34;&gt;一些知名的博客平台包括：&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;新浪博客、搜狐博客、博客园、CSDN博客、 天涯博客。&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;总而言之，博客是互联网上一种非常受欢迎的内容发布和分享形式，它为人们提供了一个自由表达、交流思想的平台。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Second Blog</title>
+      <link>https://example.org/posts/root_my-first-blog/</link>
+      <pubDate>Wed, 12 Jun 2024 22:07:45 +0800</pubDate>
+      <guid>https://example.org/posts/root_my-first-blog/</guid>
+      <description>&lt;p&gt;说明：&#xA;用 truncate (default &amp;quot;&amp;quot; $plain) 200 保证传入 truncate 的始终是字符串且长度参数为 int，避免类型错误。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Second Blog</title>
+      <link>https://example.org/posts/root_my-second-blog/</link>
+      <pubDate>Wed, 12 Jun 2024 22:07:45 +0800</pubDate>
+      <guid>https://example.org/posts/root_my-second-blog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Java Starter</title>
+      <link>https://example.org/posts/java/java/</link>
+      <pubDate>Sun, 12 May 2024 22:07:45 +0800</pubDate>
+      <guid>https://example.org/posts/java/java/</guid>
+      <description>hello， this is my first blog! Welcome</description>
+    </item>
+    <item>
+      <title>Java Starter</title>
+      <link>https://example.org/posts/java/my-first-blog/</link>
+      <pubDate>Sun, 12 May 2024 22:07:45 +0800</pubDate>
+      <guid>https://example.org/posts/java/my-first-blog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>My First Blog</title>
+      <link>https://example.org/posts/go/my-first-blog/</link>
+      <pubDate>Mon, 12 Jun 2023 22:07:45 +0800</pubDate>
+      <guid>https://example.org/posts/go/my-first-blog/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

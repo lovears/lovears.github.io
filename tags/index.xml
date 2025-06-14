@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on My New Hugo Site</title>
+    <link>https://example.org/tags/</link>
+    <description>Recent content in Tags on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 12 Jun 2024 22:07:45 +0800</lastBuildDate>
+    <atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog</title>
+      <link>https://example.org/tags/blog/</link>
+      <pubDate>Wed, 12 Jun 2024 22:07:45 +0800</pubDate>
+      <guid>https://example.org/tags/blog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>https://example.org/tags/test/</link>
+      <pubDate>Wed, 12 Jun 2024 22:07:45 +0800</pubDate>
+      <guid>https://example.org/tags/test/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Java</title>
+      <link>https://example.org/tags/java/</link>
+      <pubDate>Sun, 12 May 2024 22:07:45 +0800</pubDate>
+      <guid>https://example.org/tags/java/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

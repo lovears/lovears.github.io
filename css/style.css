@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    background: #fafafa;
+    color: #222;
+}
+header, footer {
+    text-align: center;
+}
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}

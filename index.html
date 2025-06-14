@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.147.8">
+    <meta charset="UTF-8">
+    <title>My New Hugo Site</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+<script>
+window.allArticles = {"go":{"my-first-blog.md":{"_isFile":true}},"java":{"java.md":{"_isFile":true},"maven":{"my-first-blog.md":{"_isFile":true}},"my-first-blog.md":{"_isFile":true}}};
+</script>
+    <style>
+        html, body {
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        main {
+            flex: 1;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
+    <div style="width: 100vw; z-index: 100; padding: 0.5em 0; font-size: 0.95em;">
+        <header style="background: #f8f9fa; box-shadow: 0 2px 8px rgba(0,0,0,0.04); padding: 1em 2em; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+        <h1 style="margin: 0;"><a href="/">My New Hugo Site</a></h1>
+    </div>
+    <nav>
+        <ul style="list-style: none; display: flex; gap: 1.5em; margin: 0; padding: 0;">
+            <li><a href="http://github.com/lovears">github</a></li>
+        </ul>
+    </nav>
+</header>
+
+    </div>
+    <main style="flex: 1;">
+        
+<div style="display: flex; gap: 2em;">
+    
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+<style>
+ 
+.sidebar-left {
+    background: #f4f8fb;
+    border-right: 2px solid #e0e4ea;
+    min-height: 100vh;
+    padding: 12px 10px 12px 18px;
+    box-sizing: border-box;
+    font-size: 1.04em;
+}
+@media (max-width: 900px) {
+    .sidebar-left {
+        min-width: 120px;
+        padding: 12px 4px 12px 8px;
+        font-size: 0.98em;
+    }
+}
+</style>
+<aside class="sidebar-left" style="flex: 1; ">
+    <nav>
+        <ul style="list-style: none; padding: 0;">
+            <style>
+ 
+.sidebar-tree-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.sidebar-tree-item {
+    margin: 2px 0;
+    padding: 4px 12px;
+    border-radius: 8px;
+    transition: background 0.18s, color 0.18s;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    color: #333;
+    background: #f7fafd;
+}
+.sidebar-tree-item:hover {
+    background: #e3eefd;
+    color: #1976d2;
+}
+.sidebar-tree-selected > .sidebar-tree-header > .sidebar-tree-item {
+    background: #d2e3fc !important;
+    color: #0d47a1 !important;
+}
+.sidebar-tree-children {
+    list-style: none;
+    padding-left: 1.2em;
+    margin: 0;
+    border-left: 2px solid #e0e0e0;
+}
+.sidebar-tree-header {
+    display: flex;
+    align-items: center;
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.sidebar-tree-header').forEach(function(header) {
+        header.addEventListener('click', function(e) {
+            
+            if (e.target.classList.contains('sidebar-tree-item')) {
+                const li = header.parentElement;
+                
+                li.classList.toggle('sidebar-tree-expanded');
+                const children = li.querySelector('.sidebar-tree-children');
+                if (children) {
+                    children.style.display = children.style.display === 'block' ? 'none' : 'block';
+                }
+                
+                document.querySelectorAll('.sidebar-tree-selected').forEach(function(selected) {
+                    selected.classList.remove('sidebar-tree-selected');
+                });
+                li.classList.add('sidebar-tree-selected');
+            }
+        });
+    });
+    
+    document.querySelectorAll('.sidebar-tree-children').forEach(function(ul) {
+        ul.style.display = 'none';
+    });
+});
+</script><ul class="sidebar-tree-list"><li>
+            <div class="sidebar-tree-header">
+                <span class="sidebar-tree-item" data-path="//">/</span>
+            </div><ul class="sidebar-tree-children">
+                    <style>
+ 
+.sidebar-tree-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.sidebar-tree-item {
+    margin: 2px 0;
+    padding: 4px 12px;
+    border-radius: 8px;
+    transition: background 0.18s, color 0.18s;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    color: #333;
+    background: #f7fafd;
+}
+.sidebar-tree-item:hover {
+    background: #e3eefd;
+    color: #1976d2;
+}
+.sidebar-tree-selected > .sidebar-tree-header > .sidebar-tree-item {
+    background: #d2e3fc !important;
+    color: #0d47a1 !important;
+}
+.sidebar-tree-children {
+    list-style: none;
+    padding-left: 1.2em;
+    margin: 0;
+    border-left: 2px solid #e0e0e0;
+}
+.sidebar-tree-header {
+    display: flex;
+    align-items: center;
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.sidebar-tree-header').forEach(function(header) {
+        header.addEventListener('click', function(e) {
+            
+            if (e.target.classList.contains('sidebar-tree-item')) {
+                const li = header.parentElement;
+                
+                li.classList.toggle('sidebar-tree-expanded');
+                const children = li.querySelector('.sidebar-tree-children');
+                if (children) {
+                    children.style.display = children.style.display === 'block' ? 'none' : 'block';
+                }
+                
+                document.querySelectorAll('.sidebar-tree-selected').forEach(function(selected) {
+                    selected.classList.remove('sidebar-tree-selected');
+                });
+                li.classList.add('sidebar-tree-selected');
+            }
+        });
+    });
+    
+    document.querySelectorAll('.sidebar-tree-children').forEach(function(ul) {
+        ul.style.display = 'none';
+    });
+});
+</script><ul class="sidebar-tree-list"></ul>
+
+                </ul></li><li>
+            <div class="sidebar-tree-header">
+                <span class="sidebar-tree-item" data-path="/go">go</span>
+            </div><ul class="sidebar-tree-children">
+                    <style>
+ 
+.sidebar-tree-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.sidebar-tree-item {
+    margin: 2px 0;
+    padding: 4px 12px;
+    border-radius: 8px;
+    transition: background 0.18s, color 0.18s;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    color: #333;
+    background: #f7fafd;
+}
+.sidebar-tree-item:hover {
+    background: #e3eefd;
+    color: #1976d2;
+}
+.sidebar-tree-selected > .sidebar-tree-header > .sidebar-tree-item {
+    background: #d2e3fc !important;
+    color: #0d47a1 !important;
+}
+.sidebar-tree-children {
+    list-style: none;
+    padding-left: 1.2em;
+    margin: 0;
+    border-left: 2px solid #e0e0e0;
+}
+.sidebar-tree-header {
+    display: flex;
+    align-items: center;
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.sidebar-tree-header').forEach(function(header) {
+        header.addEventListener('click', function(e) {
+            
+            if (e.target.classList.contains('sidebar-tree-item')) {
+                const li = header.parentElement;
+                
+                li.classList.toggle('sidebar-tree-expanded');
+                const children = li.querySelector('.sidebar-tree-children');
+                if (children) {
+                    children.style.display = children.style.display === 'block' ? 'none' : 'block';
+                }
+                
+                document.querySelectorAll('.sidebar-tree-selected').forEach(function(selected) {
+                    selected.classList.remove('sidebar-tree-selected');
+                });
+                li.classList.add('sidebar-tree-selected');
+            }
+        });
+    });
+    
+    document.querySelectorAll('.sidebar-tree-children').forEach(function(ul) {
+        ul.style.display = 'none';
+    });
+});
+</script><ul class="sidebar-tree-list"></ul>
+
+                </ul></li><li>
+            <div class="sidebar-tree-header">
+                <span class="sidebar-tree-item" data-path="/java">java</span>
+            </div><ul class="sidebar-tree-children">
+                    <style>
+ 
+.sidebar-tree-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.sidebar-tree-item {
+    margin: 2px 0;
+    padding: 4px 12px;
+    border-radius: 8px;
+    transition: background 0.18s, color 0.18s;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    color: #333;
+    background: #f7fafd;
+}
+.sidebar-tree-item:hover {
+    background: #e3eefd;
+    color: #1976d2;
+}
+.sidebar-tree-selected > .sidebar-tree-header > .sidebar-tree-item {
+    background: #d2e3fc !important;
+    color: #0d47a1 !important;
+}
+.sidebar-tree-children {
+    list-style: none;
+    padding-left: 1.2em;
+    margin: 0;
+    border-left: 2px solid #e0e0e0;
+}
+.sidebar-tree-header {
+    display: flex;
+    align-items: center;
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.sidebar-tree-header').forEach(function(header) {
+        header.addEventListener('click', function(e) {
+            
+            if (e.target.classList.contains('sidebar-tree-item')) {
+                const li = header.parentElement;
+                
+                li.classList.toggle('sidebar-tree-expanded');
+                const children = li.querySelector('.sidebar-tree-children');
+                if (children) {
+                    children.style.display = children.style.display === 'block' ? 'none' : 'block';
+                }
+                
+                document.querySelectorAll('.sidebar-tree-selected').forEach(function(selected) {
+                    selected.classList.remove('sidebar-tree-selected');
+                });
+                li.classList.add('sidebar-tree-selected');
+            }
+        });
+    });
+    
+    document.querySelectorAll('.sidebar-tree-children').forEach(function(ul) {
+        ul.style.display = 'none';
+    });
+});
+</script><ul class="sidebar-tree-list"><li>
+            <div class="sidebar-tree-header">
+                <span class="sidebar-tree-item" data-path="/java/maven">maven</span>
+            </div><ul class="sidebar-tree-children">
+                    <style>
+ 
+.sidebar-tree-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.sidebar-tree-item {
+    margin: 2px 0;
+    padding: 4px 12px;
+    border-radius: 8px;
+    transition: background 0.18s, color 0.18s;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    color: #333;
+    background: #f7fafd;
+}
+.sidebar-tree-item:hover {
+    background: #e3eefd;
+    color: #1976d2;
+}
+.sidebar-tree-selected > .sidebar-tree-header > .sidebar-tree-item {
+    background: #d2e3fc !important;
+    color: #0d47a1 !important;
+}
+.sidebar-tree-children {
+    list-style: none;
+    padding-left: 1.2em;
+    margin: 0;
+    border-left: 2px solid #e0e0e0;
+}
+.sidebar-tree-header {
+    display: flex;
+    align-items: center;
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.sidebar-tree-header').forEach(function(header) {
+        header.addEventListener('click', function(e) {
+            
+            if (e.target.classList.contains('sidebar-tree-item')) {
+                const li = header.parentElement;
+                
+                li.classList.toggle('sidebar-tree-expanded');
+                const children = li.querySelector('.sidebar-tree-children');
+                if (children) {
+                    children.style.display = children.style.display === 'block' ? 'none' : 'block';
+                }
+                
+                document.querySelectorAll('.sidebar-tree-selected').forEach(function(selected) {
+                    selected.classList.remove('sidebar-tree-selected');
+                });
+                li.classList.add('sidebar-tree-selected');
+            }
+        });
+    });
+    
+    document.querySelectorAll('.sidebar-tree-children').forEach(function(ul) {
+        ul.style.display = 'none';
+    });
+});
+</script><ul class="sidebar-tree-list"></ul>
+
+                </ul></li></ul>
+
+                </ul></li></ul>
+
+        </ul>
+    </nav>
+</aside>
+
+    <div style="flex: 5;">
+        <style>
+.latest-posts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.latest-posts-list li {
+    background: #f8fafc;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    padding: 12px 16px;
+    transition: background 0.2s;
+    font-size: 1.08em;
+}
+.latest-posts-list li:hover {
+    background: #e3eefd;
+}
+.latest-posts-list a {
+    text-decoration: none;
+    color: #1976d2;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.latest-posts-list a:hover {
+    color: #0d47a1;
+    text-decoration: underline;
+}
+.latest-posts-date {
+    font-size: 0.95em;
+    color: #888;
+    margin-left: 8px;
+}
+.latest-posts-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 18px 0 0 0;
+}
+.latest-posts-pagination button {
+    background: #f4f8fb;
+    border: 1px solid #e0e4ea;
+    border-radius: 4px;
+    padding: 4px 12px;
+    cursor: pointer;
+    color: #1976d2;
+    font-weight: 500;
+    transition: background 0.15s;
+}
+.latest-posts-pagination button.active,
+.latest-posts-pagination button:hover {
+    background: #e3eefd;
+    color: #0d47a1;
+}
+</style>
+<div id="latest-posts-root">
+    <ul class="latest-posts-list" id="latest-posts-list"></ul>
+    <div class="latest-posts-pagination" id="latest-posts-pagination"></div>
+</div>
+<script>
+window.allArticles = [
+    {
+        title: "Maven Starter",
+        link: "/posts/java/maven/my-first-blog/",
+        summary: "博客，又称网络日志或部落格，是一种个人或组织在网络上发布文章、图片、视频等内容的网站或在线日记。博客通常以时间倒序排列，新发布的文章排在前面。博客可以是个人分享日常、记录生活、表达观点，也可以是机构发布新闻、分享知识、推广产品。\n博客的特点包括： 个人化：:博客通常由个人管理，内容和风格都具有鲜明的个性。 即时性：:博客可以随时发布新的内容，更新速度快。 互动性：:读者可以在博客上留言评论，与博主",
+        path: "java/maven/my-first-blog.md",
+        date: "2024-06-12",
+        tags: "blog,test"
+    },
+    {
+        title: "Second Blog",
+        link: "/posts/root_my-first-blog/",
+        summary: "说明： 用 truncate (default \u0026quot;\u0026quot; $plain) 200 保证传入 truncate 的始终是字符串且长度参数为 int，避免类型错误。\n",
+        path: "root_my-first-blog.md",
+        date: "2024-06-12",
+        tags: ""
+    },
+    {
+        title: "Second Blog",
+        link: "/posts/root_my-second-blog/",
+        summary: "",
+        path: "root_my-second-blog.md",
+        date: "2024-06-12",
+        tags: ""
+    },
+    {
+        title: "Java Starter",
+        link: "/posts/java/java/",
+        summary: "",
+        path: "java/java.md",
+        date: "2024-05-12",
+        tags: "java,blog"
+    },
+    {
+        title: "Java Starter",
+        link: "/posts/java/my-first-blog/",
+        summary: "",
+        path: "java/my-first-blog.md",
+        date: "2024-05-12",
+        tags: ""
+    },
+    {
+        title: "My First Blog",
+        link: "/posts/go/my-first-blog/",
+        summary: "",
+        path: "go/my-first-blog.md",
+        date: "2023-06-12",
+        tags: ""
+    },];
+
+(function(){
+    const PAGE_SIZE = 10;
+    let filtered = window.allArticles.slice();
+    let currentPage = 1;
+    let currentPrefix = '';
+
+    function renderList() {
+        const list = document.getElementById('latest-posts-list');
+        list.innerHTML = '';
+        const start = (currentPage-1)*PAGE_SIZE;
+        const end = start + PAGE_SIZE;
+        filtered.slice(start, end).forEach(post => {
+            const li = document.createElement('li');
+            li.style.display = 'block';
+            li.style.padding = '0';
+            li.style.background = '#fff';
+            li.style.border = '1px solid #e3eefd';
+            li.style.boxShadow = '0 2px 8px rgba(25, 118, 210, 0.06)';
+            li.style.borderRadius = '10px';
+            li.style.marginBottom = '16px';
+            li.style.overflow = 'hidden';
+            li.style.maxWidth = '100%';
+            li.innerHTML = `
+                <a href="${post.link}" style="display: flex; flex-direction: column; height: 100%; width: 100%; text-decoration: none; color: inherit; min-height: 90px; position: relative; padding: 22px 24px 18px 24px; box-sizing: border-box; max-width: 100%; overflow: hidden;">
+                    <div style="font-size:1.18em; font-weight:700; margin-bottom:6px; color:#1976d2; word-break:break-word; overflow: hidden; text-overflow: ellipsis;">
+                        ${post.title}
+                    </div>
+                    <div style="color:#444; margin-bottom:10px; flex:1; line-height:1.6; word-break:break-word; overflow: hidden; text-overflow: ellipsis;">
+                        ${post.summary || ''}
+                    </div>
+                    <div style="display: flex; align-items: flex-end; margin-top: 10px; flex-wrap: wrap;">
+                        <span class="latest-posts-date" style="color:#90a4ae; font-size:0.97em; margin-left:8px; margin-right:18px;">${post.date}</span>
+                        <span>
+                            ${
+                                post.tags
+                                    ? `<i class="fa fa-tags" style="margin-right:6px; color:#90caf9;"></i>
+                                        ${post.tags.split(',').map(tag => `<span style="background:#e3eefd; color:#1976d2; border-radius:4px; padding:2px 9px; margin-right:8px; font-size:0.97em;">${tag.trim()}</span>`).join('')}`
+                                    : ''
+                            }
+                        </span>
+                    </div>
+                </a>
+            `;
+            list.appendChild(li);
+        });
+    }
+
+    function renderPagination() {
+        const pag = document.getElementById('latest-posts-pagination');
+        pag.innerHTML = '';
+        const total = Math.ceil(filtered.length / PAGE_SIZE);
+        if(total <= 1) return;
+        for(let i=1; i<=total; i++) {
+            const btn = document.createElement('button');
+            btn.textContent = i;
+            if(i === currentPage) btn.classList.add('active');
+            btn.onclick = () => {
+                currentPage = i;
+                renderList();
+                renderPagination();
+            };
+            pag.appendChild(btn);
+        }
+    }
+
+    function filterByPrefix(prefix) {
+        currentPrefix = prefix;
+        if(!prefix || prefix === "/") {
+            filtered = window.allArticles.slice();
+        } else {
+            filtered = window.allArticles.filter(post => post.path.startsWith(prefix.replace(/^\//, "")));
+        }
+        currentPage = 1;
+        renderList();
+        renderPagination();
+    }
+
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        
+        filterByPrefix('');
+        
+        document.querySelectorAll('.sidebar-tree-item').forEach(function(item){
+            item.addEventListener('click', function(e){
+                
+                let path = item.getAttribute('data-path') || '';
+                if (path === '//') {
+                    path = "/";
+                }
+                filterByPrefix(path);
+            });
+        });
+    });
+})();
+</script>
+
+    </div>
+</div>
+
+    </main>
+    <footer style="background: #f8f9fa; text-align: center; padding: 0.5em 0; box-shadow: 0 -2px 8px rgba(0,0,0,0.04);  width: 100vw; z-index: 10;">
+        <p>&copy; 2025 My New Hugo Site</p>
+    </footer>
+</body>
+</html>
