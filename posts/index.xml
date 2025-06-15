@@ -1,14 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Jul24th</title><link>https://lovears.github.io/posts/</link><description>Recent content in Posts on Jul24th</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Wed, 12 Jun 2024 22:07:45 +0800</lastBuildDate><atom:link href="https://lovears.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Maven Starter</title><link>https://lovears.github.io/posts/java/maven/my-first-blog/</link><pubDate>Wed, 12 Jun 2024 22:07:45 +0800</pubDate><guid>https://lovears.github.io/posts/java/maven/my-first-blog/</guid><description>&lt;p>博客，又称网络日志或部落格，是一种个人或组织在网络上发布文章、图片、视频等内容的网站或在线日记。博客通常以时间倒序排列，新发布的文章排在前面。博客可以是个人分享日常、记录生活、表达观点，也可以是机构发布新闻、分享知识、推广产品。&lt;/p>
-&lt;h2 id="博客的特点包括">博客的特点包括：&lt;/h2>
-&lt;ul>
-&lt;li>个人化：:博客通常由个人管理，内容和风格都具有鲜明的个性。&lt;/li>
-&lt;li>即时性：:博客可以随时发布新的内容，更新速度快。&lt;/li>
-&lt;li>互动性：:读者可以在博客上留言评论，与博主进行交流互动。&lt;/li>
-&lt;li>易于分享：:博客上的内容可以方便地分享到其他社交平台。&lt;/li>
-&lt;li>多样化：:博客的内容可以涵盖各种主题，如生活、旅行、科技、文学等等。&lt;/li>
-&lt;/ul>
-&lt;h2 id="一些知名的博客平台包括">一些知名的博客平台包括：&lt;/h2>
-&lt;blockquote>
-&lt;p>新浪博客、搜狐博客、博客园、CSDN博客、 天涯博客。&lt;/p>&lt;/blockquote>
-&lt;p>总而言之，博客是互联网上一种非常受欢迎的内容发布和分享形式，它为人们提供了一个自由表达、交流思想的平台。&lt;/p></description></item><item><title>Second Blog</title><link>https://lovears.github.io/posts/root_my-first-blog/</link><pubDate>Wed, 12 Jun 2024 22:07:45 +0800</pubDate><guid>https://lovears.github.io/posts/root_my-first-blog/</guid><description>&lt;p>说明：
-用 truncate (default &amp;quot;&amp;quot; $plain) 200 保证传入 truncate 的始终是字符串且长度参数为 int，避免类型错误。&lt;/p></description></item><item><title>Second Blog</title><link>https://lovears.github.io/posts/root_my-second-blog/</link><pubDate>Wed, 12 Jun 2024 22:07:45 +0800</pubDate><guid>https://lovears.github.io/posts/root_my-second-blog/</guid><description/></item><item><title>Java Starter</title><link>https://lovears.github.io/posts/java/java/</link><pubDate>Sun, 12 May 2024 22:07:45 +0800</pubDate><guid>https://lovears.github.io/posts/java/java/</guid><description>hello， this is my first blog! Welcome</description></item><item><title>Java Starter</title><link>https://lovears.github.io/posts/java/my-first-blog/</link><pubDate>Sun, 12 May 2024 22:07:45 +0800</pubDate><guid>https://lovears.github.io/posts/java/my-first-blog/</guid><description/></item><item><title>My First Blog</title><link>https://lovears.github.io/posts/go/my-first-blog/</link><pubDate>Mon, 12 Jun 2023 22:07:45 +0800</pubDate><guid>https://lovears.github.io/posts/go/my-first-blog/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Jul24th</title><link>https://lovears.github.io/posts/</link><description>Recent content in Posts on Jul24th</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 12 May 2024 22:07:45 +0800</lastBuildDate><atom:link href="https://lovears.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Java Starter</title><link>https://lovears.github.io/posts/java/java/</link><pubDate>Sun, 12 May 2024 22:07:45 +0800</pubDate><guid>https://lovears.github.io/posts/java/java/</guid><description>hello， this is my first blog! Welcome</description></item><item><title>Java Starter</title><link>https://lovears.github.io/posts/java/my-first-blog/</link><pubDate>Sun, 12 May 2024 22:07:45 +0800</pubDate><guid>https://lovears.github.io/posts/java/my-first-blog/</guid><description/></item><item><title>My First Blog</title><link>https://lovears.github.io/posts/go/my-first-blog/</link><pubDate>Mon, 12 Jun 2023 22:07:45 +0800</pubDate><guid>https://lovears.github.io/posts/go/my-first-blog/</guid><description/></item><item><title/><link>https://lovears.github.io/posts/java/maven/113.05.101-maven%E6%8F%92%E4%BB%B6maven%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lovears.github.io/posts/java/maven/113.05.101-maven%E6%8F%92%E4%BB%B6maven%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91/</guid><description>&lt;h1 id="maven插件开发">Maven插件开发&lt;/h1>
+&lt;p>[TOC]&lt;/p>
+&lt;h2 id="maven阶段phase">Maven阶段（phase）&lt;/h2>
+&lt;p>Maven插件的phase（阶段）是指Maven在构建过程中执行插件的特定时间点。每个phase都是一个特定的构建阶段，以确定的顺序来执行，并且可以在pom.xml文件中定义和自定义。&lt;/p>
+&lt;p>以下是常见的Maven插件阶段：&lt;/p>
+&lt;ol>
+&lt;li>validate - 验证项目是否正确并且所有的必要信息可用。&lt;/li>
+&lt;li>initialize - 初始化构建参数，如设置版本号、获取外部依赖等。&lt;/li>
+&lt;li>generate-sources - 生成源代码。&lt;/li>
+&lt;li>process-sources - 处理源代码，在编译之前处理源文件。&lt;/li>
+&lt;li>generate-resources - 生成项目使用的资源文件。&lt;/li>
+&lt;li>process-resources - 对项目资源文件进行处理。&lt;/li>
+&lt;li>compile - 编译源代码。&lt;/li>
+&lt;li>process-classes - 处理编译后的字节码。&lt;/li>
+&lt;li>generate-test-sources - 生成测试源代码。&lt;/li>
+&lt;li>process-test-sources - 处理测试源代码，在编译测试代码之前处理源文件。&lt;/li>
+&lt;li>generate-test-resources - 生成测试使用的资源文件。&lt;/li>
+&lt;li>process-test-resources - 处理测试资源文件。&lt;/li>
+&lt;li>test-compile - 编译测试代码。&lt;/li>
+&lt;li>process-test-classes - 处理测试类文件。&lt;/li>
+&lt;li>test - 运行测试。&lt;/li>
+&lt;li>package - 打包成可分发的格式，如jar、war等。&lt;/li>
+&lt;li>pre-integration-test - 集成测试前的准备工作。&lt;/li>
+&lt;li>integration-test - 进行集成测试。&lt;/li>
+&lt;li>post-integration-test - 集成测试后的清理工作。&lt;/li>
+&lt;li>verify - 对集成测试结果进行验证。&lt;/li>
+&lt;li>install - 安装到本地仓库。&lt;/li>
+&lt;li>deploy - 发布到远程仓库。
+其中，每个阶段都有唯一的标识符，例如，compile阶段的标识符是&amp;quot;compile&amp;quot;，test阶段的标识符是&amp;quot;test&amp;quot;，依此类推。开发人员可以在pom.xml文件中配置插件将其绑定指定的phase上。&lt;/li>
+&lt;/ol>
+&lt;p>总之，Maven插件的phase根据构建过程中的不同阶段来定义，开发人员可以根据需要在pom.xml文件中按照指定的顺序来绑定 phase 和 plugin，从而实现特定的构建操作。&lt;/p></description></item></channel></rss>
