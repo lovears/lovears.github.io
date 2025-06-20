@@ -26,4 +26,51 @@
 &lt;li>deploy - 发布到远程仓库。
 其中，每个阶段都有唯一的标识符，例如，compile阶段的标识符是&amp;quot;compile&amp;quot;，test阶段的标识符是&amp;quot;test&amp;quot;，依此类推。开发人员可以在pom.xml文件中配置插件将其绑定指定的phase上。&lt;/li>
 &lt;/ol>
-&lt;p>总之，Maven插件的phase根据构建过程中的不同阶段来定义，开发人员可以根据需要在pom.xml文件中按照指定的顺序来绑定 phase 和 plugin，从而实现特定的构建操作。&lt;/p></description></item></channel></rss>
+&lt;p>总之，Maven插件的phase根据构建过程中的不同阶段来定义，开发人员可以根据需要在pom.xml文件中按照指定的顺序来绑定 phase 和 plugin，从而实现特定的构建操作。&lt;/p></description></item><item><title>office安装激活</title><link>https://lovears.github.io/posts/1_projects/8_tools/192-office/office%E5%AE%89%E8%A3%85%E6%BF%80%E6%B4%BB/</link><pubDate>Sat, 23 Mar 2024 21:30:12 +0000</pubDate><guid>https://lovears.github.io/posts/1_projects/8_tools/192-office/office%E5%AE%89%E8%A3%85%E6%BF%80%E6%B4%BB/</guid><description>&lt;h2 id="官网下载-office-deployment-tool">官网下载 &lt;code>Office Deployment Tool&lt;/code>&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>https://www.microsoft.com/en-US/download
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="配置config文件并导出-xml">配置config文件并导出 xml&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>https://config.office.com/deploymentsettings
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="安装">安装&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>cd c:&lt;span style="color:#ae81ff">\o&lt;/span>ffice（文件夹目录）
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>setup.exe /download config.xml
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>setup.exe /configure config.xml
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="激活">激活&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>cd C:&lt;span style="color:#ae81ff">\P&lt;/span>rogram Files&lt;span style="color:#f92672">(&lt;/span>x86&lt;span style="color:#f92672">)&lt;/span>&lt;span style="color:#ae81ff">\M&lt;/span>icrosoft Office&lt;span style="color:#ae81ff">\O&lt;/span>ffice16 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># or cd C:\Program Files\Microsoft Office\Office16&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cscript ospp.vbs /sethst:kms.03k.org 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cscript ospp.vbs /act
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>sethst:kms.03k.org 为kms激活地址，可以使用以下替换&lt;/p></description></item></channel></rss>
