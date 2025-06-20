@@ -1,1 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Java on Jul24th</title><link>https://lovears.github.io/tags/java/</link><description>Recent content in Java on Jul24th</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 12 May 2024 22:07:45 +0800</lastBuildDate><atom:link href="https://lovears.github.io/tags/java/index.xml" rel="self" type="application/rss+xml"/><item><title>Java Starter</title><link>https://lovears.github.io/posts/java/java/</link><pubDate>Sun, 12 May 2024 22:07:45 +0800</pubDate><guid>https://lovears.github.io/posts/java/java/</guid><description>hello， this is my first blog! Welcome</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Java on Jul24th</title><link>https://lovears.github.io/tags/java/</link><description>Recent content in Java on Jul24th</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Mon, 16 Jun 2025 21:30:12 +0000</lastBuildDate><atom:link href="https://lovears.github.io/tags/java/index.xml" rel="self" type="application/rss+xml"/><item><title>113.05.101-【maven插件】Maven插件开发</title><link>https://lovears.github.io/posts/1_projects/01.%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/113-java%E5%AD%A6%E4%B9%A0%E7%94%9F%E6%80%81/113.05-maven/113.05.101-maven%E6%8F%92%E4%BB%B6maven%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91/</link><pubDate>Mon, 16 Jun 2025 21:30:12 +0000</pubDate><guid>https://lovears.github.io/posts/1_projects/01.%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/113-java%E5%AD%A6%E4%B9%A0%E7%94%9F%E6%80%81/113.05-maven/113.05.101-maven%E6%8F%92%E4%BB%B6maven%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91/</guid><description>&lt;h2 id="maven阶段phase">Maven阶段（phase）&lt;/h2>
+&lt;p>Maven插件的phase（阶段）是指Maven在构建过程中执行插件的特定时间点。每个phase都是一个特定的构建阶段，以确定的顺序来执行，并且可以在pom.xml文件中定义和自定义。&lt;/p>
+&lt;p>以下是常见的Maven插件阶段：&lt;/p>
+&lt;ol>
+&lt;li>validate - 验证项目是否正确并且所有的必要信息可用。&lt;/li>
+&lt;li>initialize - 初始化构建参数，如设置版本号、获取外部依赖等。&lt;/li>
+&lt;li>generate-sources - 生成源代码。&lt;/li>
+&lt;li>process-sources - 处理源代码，在编译之前处理源文件。&lt;/li>
+&lt;li>generate-resources - 生成项目使用的资源文件。&lt;/li>
+&lt;li>process-resources - 对项目资源文件进行处理。&lt;/li>
+&lt;li>compile - 编译源代码。&lt;/li>
+&lt;li>process-classes - 处理编译后的字节码。&lt;/li>
+&lt;li>generate-test-sources - 生成测试源代码。&lt;/li>
+&lt;li>process-test-sources - 处理测试源代码，在编译测试代码之前处理源文件。&lt;/li>
+&lt;li>generate-test-resources - 生成测试使用的资源文件。&lt;/li>
+&lt;li>process-test-resources - 处理测试资源文件。&lt;/li>
+&lt;li>test-compile - 编译测试代码。&lt;/li>
+&lt;li>process-test-classes - 处理测试类文件。&lt;/li>
+&lt;li>test - 运行测试。&lt;/li>
+&lt;li>package - 打包成可分发的格式，如jar、war等。&lt;/li>
+&lt;li>pre-integration-test - 集成测试前的准备工作。&lt;/li>
+&lt;li>integration-test - 进行集成测试。&lt;/li>
+&lt;li>post-integration-test - 集成测试后的清理工作。&lt;/li>
+&lt;li>verify - 对集成测试结果进行验证。&lt;/li>
+&lt;li>install - 安装到本地仓库。&lt;/li>
+&lt;li>deploy - 发布到远程仓库。
+其中，每个阶段都有唯一的标识符，例如，compile阶段的标识符是&amp;quot;compile&amp;quot;，test阶段的标识符是&amp;quot;test&amp;quot;，依此类推。开发人员可以在pom.xml文件中配置插件将其绑定指定的phase上。&lt;/li>
+&lt;/ol>
+&lt;p>总之，Maven插件的phase根据构建过程中的不同阶段来定义，开发人员可以根据需要在pom.xml文件中按照指定的顺序来绑定 phase 和 plugin，从而实现特定的构建操作。&lt;/p></description></item></channel></rss>
