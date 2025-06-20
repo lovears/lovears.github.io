@@ -1,4 +1,65 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Jul24th</title><link>https://lovears.github.io/posts/</link><description>Recent content in Posts on Jul24th</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 12 May 2024 22:07:45 +0800</lastBuildDate><atom:link href="https://lovears.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Java Starter</title><link>https://lovears.github.io/posts/java/java/</link><pubDate>Sun, 12 May 2024 22:07:45 +0800</pubDate><guid>https://lovears.github.io/posts/java/java/</guid><description>hello， this is my first blog! Welcome</description></item><item><title>Java Starter</title><link>https://lovears.github.io/posts/java/my-first-blog/</link><pubDate>Sun, 12 May 2024 22:07:45 +0800</pubDate><guid>https://lovears.github.io/posts/java/my-first-blog/</guid><description/></item><item><title>My First Blog</title><link>https://lovears.github.io/posts/go/my-first-blog/</link><pubDate>Mon, 12 Jun 2023 22:07:45 +0800</pubDate><guid>https://lovears.github.io/posts/go/my-first-blog/</guid><description/></item><item><title/><link>https://lovears.github.io/posts/java/maven/113.05.101-maven%E6%8F%92%E4%BB%B6maven%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lovears.github.io/posts/java/maven/113.05.101-maven%E6%8F%92%E4%BB%B6maven%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91/</guid><description>&lt;h1 id="maven插件开发">Maven插件开发&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Jul24th</title><link>https://lovears.github.io/posts/</link><description>Recent content in Posts on Jul24th</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Mon, 16 Jun 2025 00:49:34 +0000</lastBuildDate><atom:link href="https://lovears.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>113.05.102-【maven插件】maven-plugin-assembly</title><link>https://lovears.github.io/posts/113.05.102-maven%E6%8F%92%E4%BB%B6maven-plugin-assembly/</link><pubDate>Mon, 16 Jun 2025 00:49:34 +0000</pubDate><guid>https://lovears.github.io/posts/113.05.102-maven%E6%8F%92%E4%BB%B6maven-plugin-assembly/</guid><description>&lt;h1 id="maven-plugin-assembly">maven-plugin-assembly&lt;/h1>
+&lt;p>[TOC]&lt;/p>
+&lt;h2 id="解压指定的jar包">解压指定的jar包&lt;/h2>
+&lt;p>想要使用 &lt;code>maven-assembly-plugin&lt;/code> 解压指定的 jar 包，可以使用 unpack 类型的 &lt;code>assembly&lt;/code> ，具体步骤如下：&lt;/p>
+&lt;ol>
+&lt;li>在需要解压的 jar 包目录下创建一个名为 assembly.xml 的文件。&lt;/li>
+&lt;/ol>
+&lt;p>在 assembly.xml 中配置 unpack 类型的 assembly，例如：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;assembly&lt;/span> &lt;span style="color:#a6e22e">xmlns=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">xmlns:xsi=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">xsi:schemaLocation=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd&amp;#34;&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;id&amp;gt;&lt;/span>unpack-jar&lt;span style="color:#f92672">&amp;lt;/id&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;formats&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;format&amp;gt;&lt;/span>dir&lt;span style="color:#f92672">&amp;lt;/format&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;/formats&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;fileSets&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;fileSet&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;directory&amp;gt;&lt;/span>target&lt;span style="color:#f92672">&amp;lt;/directory&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;includes&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;include&amp;gt;&lt;/span>your.jar&lt;span style="color:#f92672">&amp;lt;/include&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;/includes&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;outputDirectory&amp;gt;&lt;/span>./&lt;span style="color:#f92672">&amp;lt;/outputDirectory&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;unpack&amp;gt;&lt;/span>true&lt;span style="color:#f92672">&amp;lt;/unpack&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;/fileSet&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;/fileSets&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;/assembly&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中 id 为 &lt;code>assembly&lt;/code> 的标识符，&lt;code>formats&lt;/code> 为输出格式，这里选用的是 dir 表示输出到目录；&lt;code>fileSets&lt;/code> 为文件集合，指定了需要解压的 jar 包的路径和名称，以及输出目录和解压标识为 &lt;code>true&lt;/code>。&lt;/p>
+&lt;p>在 &lt;code>pom.xml&lt;/code> 中添加 &lt;code>maven-assembly-plugin&lt;/code> 插件，并配置 &lt;code>assembly.xml&lt;/code> 的位置和执行 &lt;code>unpack-jar assembly&lt;/code>，例如：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;build&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;plugins&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;plugin&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;groupId&amp;gt;&lt;/span>org.apache.maven.plugins&lt;span style="color:#f92672">&amp;lt;/groupId&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;artifactId&amp;gt;&lt;/span>maven-assembly-plugin&lt;span style="color:#f92672">&amp;lt;/artifactId&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;version&amp;gt;&lt;/span>3.3.0&lt;span style="color:#f92672">&amp;lt;/version&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;configuration&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;descriptors&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;descriptor&amp;gt;&lt;/span>assembly.xml&lt;span style="color:#f92672">&amp;lt;/descriptor&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;/descriptors&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;/configuration&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;executions&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;execution&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;id&amp;gt;&lt;/span>unpack-jar&lt;span style="color:#f92672">&amp;lt;/id&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;phase&amp;gt;&lt;/span>install&lt;span style="color:#f92672">&amp;lt;/phase&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;goals&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;goal&amp;gt;&lt;/span>single&lt;span style="color:#f92672">&amp;lt;/goal&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;/goals&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;configuration&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;appendAssemblyId&amp;gt;&lt;/span>false&lt;span style="color:#f92672">&amp;lt;/appendAssemblyId&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;descriptorRefs&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;descriptorRef&amp;gt;&lt;/span>unpack-jar&lt;span style="color:#f92672">&amp;lt;/descriptorRef&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;/descriptorRefs&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;/configuration&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;/execution&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;/executions&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;/plugin&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;/plugins&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;/build&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中 &lt;code>&amp;lt;descriptor&amp;gt;assembly.xml&amp;lt;/descriptor&amp;gt;&lt;/code>指定了 &lt;code>assembly.xml&lt;/code> 的位置。&lt;code>&amp;lt;phase&amp;gt;install&amp;lt;/phase&amp;gt;&lt;/code> 表示在 &lt;code>install&lt;/code> 阶段执行，可以根据需要更改。&lt;code>&amp;lt;descriptorRef&amp;gt;unpack-jar&amp;lt;/descriptorRef&amp;gt;&lt;/code> 表示使用 &lt;code>unpack-jar assembly&lt;/code>。&lt;/p></description></item><item><title>Java Starter</title><link>https://lovears.github.io/posts/java/java/</link><pubDate>Sun, 12 May 2024 22:07:45 +0800</pubDate><guid>https://lovears.github.io/posts/java/java/</guid><description>hello， this is my first blog! Welcome</description></item><item><title>Java Starter</title><link>https://lovears.github.io/posts/java/my-first-blog/</link><pubDate>Sun, 12 May 2024 22:07:45 +0800</pubDate><guid>https://lovears.github.io/posts/java/my-first-blog/</guid><description/></item><item><title>My First Blog</title><link>https://lovears.github.io/posts/go/my-first-blog/</link><pubDate>Mon, 12 Jun 2023 22:07:45 +0800</pubDate><guid>https://lovears.github.io/posts/go/my-first-blog/</guid><description/></item><item><title/><link>https://lovears.github.io/posts/java/maven/113.05.101-maven%E6%8F%92%E4%BB%B6maven%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lovears.github.io/posts/java/maven/113.05.101-maven%E6%8F%92%E4%BB%B6maven%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91/</guid><description>&lt;h1 id="maven插件开发">Maven插件开发&lt;/h1>
 &lt;p>[TOC]&lt;/p>
 &lt;h2 id="maven阶段phase">Maven阶段（phase）&lt;/h2>
 &lt;p>Maven插件的phase（阶段）是指Maven在构建过程中执行插件的特定时间点。每个phase都是一个特定的构建阶段，以确定的顺序来执行，并且可以在pom.xml文件中定义和自定义。&lt;/p>
